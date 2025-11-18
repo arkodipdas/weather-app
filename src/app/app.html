@@ -1,0 +1,50 @@
+<div>
+
+  <input type="text" [(ngModel)]="inputValue" placeholder="Enter city" class="city">
+  <br>
+  <br>
+  <button class="btn" (click)="displayName()">Search</button>
+  <br>  
+  <div class="container" *ngIf="weatherData">
+ 
+    <div class="upper">
+
+      <img src="summer.jpg" alt="" *ngIf="weatherData.main.temp > 70">
+      <img src="winter.jpg" alt="" *ngIf="weatherData.main.temp <= 70">
+      <div class="data">
+        <div class="temp">{{weatherData.main.temp | number:'1.0-0'}}°F</div>
+        <div class="location">{{weatherData.name}}</div>
+      </div>
+
+    </div>
+
+    <div class="lower">
+      <div class="micontainer">
+
+        <div class="info">
+          <img src="humidity.png" alt="">
+          <br>
+          
+          <span style="font-size:larger;font-weight:bold">Humidity : {{weatherData.main.humidity}} %</span>
+        </div>
+      
+
+      </div>
+
+      <div class="micontainer">
+
+        <div class="info">
+          <img src="wind.png" alt="">
+          
+          <span style="font-size:larger;font-weight:bold">Wind : {{weatherData.wind.speed}}km/hr</span>
+        </div>
+      
+
+      </div>
+
+   </div>
+
+  </div>
+ 
+
+</div>

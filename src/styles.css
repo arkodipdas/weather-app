@@ -1,0 +1,107 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    height: 100vh;
+    width: 100%;
+    background: #00e1b160;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container{
+    width: 400px;
+    height: 80vh;
+    border-radius: 20px;
+    border-color: black;
+    background: #0091ffa9;
+    box-shadow: 10px 10px 10px 10px rgb(99, 99, 113);
+
+}
+.upper{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+.upper img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.data{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 139, 139, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 70px;
+    
+}
+.location{
+    font-size: 20px;
+    font-style: italic;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 80%;
+
+}
+.info img{
+    position: relative;
+    height:80px;
+    width: 80px;
+    top: 11px;
+
+}
+.txt{
+        height: 37px;
+    border-radius: 45px;
+    width: 250px;
+    display: block;
+    position: relative;
+    left: 84px;
+}
+.search{
+       height: 29px;
+    width: 61px;
+    border-radius: 20px;
+    position: relative;
+    left: 181px; 
+}
+.city{
+    height: 35px;
+    border-radius:10px ;
+    background-color: rgba(100, 211, 255, 0.555);
+    position: relative;
+    left: 1%;
+    width: 400px;
+}
+.btn{
+    height: 40px;
+    width: 100px;
+    display: block;
+    position: relative;
+    border-radius: 10px;
+    left:40%;
+}
